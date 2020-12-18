@@ -11,9 +11,9 @@ else:
         long_description = fh.read()
 
 setup(
-    name='countriesapi',
+    name='calculatorapi',
     version='1.0.0',
-    description='This API retrieve the information of all country names and codes',
+    description='This is my first API',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author='APIMatic SDK Generator',
@@ -25,5 +25,9 @@ setup(
         'jsonpickle>=0.7.1, <1.0',
         'cachecontrol>=0.11.7, <1.0',
         'python-dateutil>=2.5.3, <3.0'
-    ]
+    ],
+    tests_require=[
+        'nose>=1.3.7'
+    ],
+    test_suite = 'nose.collector'
 )
