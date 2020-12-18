@@ -35,6 +35,6 @@ class SimpleCalculatorControllerTests(ControllerTestBase):
         
         # Test whether the captured response is as we expected
         self.assertIsNotNone(result)
-        self.assertEqual('20', self.response_catcher.response.raw_body)
+        self.assertEqual('20.0', self.response_catcher.response.raw_body)
 
 
